@@ -1,10 +1,13 @@
 import React from 'react'
 import { FaUserCircle } from "react-icons/fa";
 import messages from '../data/inbox'
+import Navbar from './Navbar';
 
 const Inbox = () => {
     return (
         <>
+        <Navbar/>
+        <div className="mt-16"></div>
             {
                 messages.map((msg) => (
                     <div key={msg.id} className='flex p-3 border border-slate-500'>
